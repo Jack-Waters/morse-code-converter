@@ -53,14 +53,12 @@ std::string convertToMorseCode(std::string text) {
     for (int i = 0; i < text.length(); i++) {
         char character = text[i];
         if (character == ' ') {
-            conversion += "_";
+            conversion += "|";
         }
         else if (isdigit(character)) {
-            //conversion += numbersMorseCode.at(character);
             conversion += numbersMorseCode[character];
         }
         else {
-            //conversion += alphabetMorseCode.at(toupper(character));
             conversion += alphabetMorseCode[toupper(character)];
         }
         conversion += " ";

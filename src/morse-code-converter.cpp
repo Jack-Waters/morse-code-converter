@@ -9,7 +9,7 @@
 
 int main() {
     std::string test;
-    test = convertToMorseCode("E");
+    test = convertToMorseCode("Hello there 8008");
 
     std::cout << test << std::endl;
     return 0;
