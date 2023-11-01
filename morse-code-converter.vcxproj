@@ -127,7 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="morse-code-converter.cpp" />
+    <ClCompile Include="src\convertToMorseCode.cpp" />
+    <ClCompile Include="src\morse-code-converter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="headers\convertToMorseCode.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
