@@ -56,10 +56,12 @@ std::string convertToMorseCode(std::string text) {
             conversion += "_";
         }
         else if (isdigit(character)) {
-            conversion += numbersMorseCode.at(character);
+            //conversion += numbersMorseCode.at(character);
+            conversion += numbersMorseCode[character];
         }
         else {
-            conversion += alphabetMorseCode.at(toupper(character));
+            //conversion += alphabetMorseCode.at(toupper(character));
+            conversion += alphabetMorseCode[toupper(character)];
         }
         conversion += " ";
     }
